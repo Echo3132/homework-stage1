@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.top-nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top-nav .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.top-nav .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.top-nav .nav-menu li a:hover {
+    color: #ff9800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    background-color: #d4e1d6;
+    border: 1px solid #cce3cf;
+    padding: 1px;
+    border-radius: 5px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+:hover .card {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    background-size: cover;
+
+    background-color: #ba901d;
+    padding: 5%;
+    text-align: center;
+}
+
+.food-cards {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.food-cards h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.food-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.food-card h3 {
+    margin: 10px 0 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+.food-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.food-card .price {
+    display: inline-block;
+    background: #ff9800;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.badge.hot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #f44336;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: #ff9800;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    z-index: 998;
+}
+
+.back-to-top:hover {
+    background: #e68900;
+}

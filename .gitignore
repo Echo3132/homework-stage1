@@ -1,0 +1,11 @@
+# 编辑器
+.idea/
+.vscode/
+
+# 系统
+Thumbs.db
+.DS_Store
+
+# 依赖与日志
+node_modules/
+*.log

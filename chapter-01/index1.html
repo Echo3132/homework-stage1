@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="top-nav">
+        <div class="logo">深夜美食食堂</div>
+        <ul class="nav-menu">
+            <li><a href="#header">活动安排</a></li>
+            <li><a href="#signup">在线报名</a></li>
+            <li><a href="#food-cards">美食推荐</a></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+    <img src="10.14.jpg" alt="美食节活动图片"  >
+        <h1>美食节活动安排</h1>
+
+    </header>
+    <table border="1">
+
+  
+    
+     <tr>
+        <th>活动日期</th>
+        <th>活动时间</th>
+        <th>活动内容</th>
+        <th>活动地点</th>
+     </tr>
+
+     <tr>
+        <td rowspan="2">10.13</td>
+        <td>上午09:00-12:00</td>
+        <td>美食制作体验</td>
+        <td>一号食堂大厅</td>
+     </tr>
+
+        <tr>
+            <td>下午14:00-17:00</td>
+            <td>美食分享会</td>
+            <td>一号食堂大厅</td>
+        </tr>
+
+        <tr>
+            <td>10.14</td>
+            <td>全天</td>
+            <td>特色小吃展</td>
+            <td>步行街</td>
+        </tr>
+
+        <h2>美食节在线报名</h2>
+
+
+    </table>
+
+    <form action="submit.php" method="post">
+     用户名：
+    <input type="text" name="username"  required placeholder ="请输入姓名" maxlength="4">
+    <br>
+    电话号码：
+    <input type="tel" name="tel" placeholder ="请输入电话号码" required pattern="[0-9]{11}" title="请输入11位电话号码">
+    <br>
+    性别：
+    <input type="radio" name="gender" value="male">男
+    <input type="radio" name="gender" value="female">女
+    <br>
+    参加项目：
+    <input type="checkbox" name="item" value="1">美食制作
+    <input type="checkbox" name="item" value="2">美食品鉴
+    <input type="checkbox" name="item" value="3">特色小吃展
+    <br>
+    年级：
+    <label for="grade">请选择年级：</label>
+    <select id="grade">
+        <option value="1">大一</option>
+        <option value="2">大二</option>
+        <option value="3">大三</option>
+        <option value="4">大四</option>
+    </select>
+    
+     <label for="message">留言：</label>
+    <textarea id="message" rows="4" cols="50" placeholder="请输入留言"></textarea>
+<br>    
+    <button type="submit">提交</button>
+    </form>
+
+    <p>美食点评专区</p>
+    <div class="card">
+        <p>点评1:招牌麻辣烫<br>真香</p>
+        <p>点评2:特色小吃<br>味道不错</p>
+        <p>点评3:美食制作体验<br>很有趣</p>
+    </div>
+
+    <section id="food-cards" class="food-cards">
+        <h2>美食推荐</h2>
+        <div class="card-grid">
+            <div class="food-card">
+                <span class="badge hot">热销</span>
+                <h3>招牌麻辣烫</h3>
+                <p>麻辣鲜香，回味无穷</p>
+                <span class="price">¥15</span>
+            </div>
+            <div class="food-card">
+                <h3>特色小吃拼盘</h3>
+                <p>多种小吃一次尝遍</p>
+                <span class="price">¥25</span>
+            </div>
+            <div class="food-card">
+                <span class="badge hot">热销</span>
+                <h3>手工水饺</h3>
+                <p>皮薄馅大，鲜香可口</p>
+                <span class="price">¥12</span>
+            </div>
+            <div class="food-card">
+                <h3>香煎牛排</h3>
+                <p>外焦里嫩，汁水丰富</p>
+                <span class="price">¥35</span>
+            </div>
+            <div class="food-card">
+                <h3>水果沙拉</h3>
+                <p>新鲜水果，健康美味</p>
+                <span class="price">¥18</span>
+            </div>
+            <div class="food-card">
+                <span class="badge hot">热销</span>
+                <h3>奶油蛋糕</h3>
+                <p>香甜细腻，入口即化</p>
+                <span class="price">¥20</span>
+            </div>
+        </div>
+    </section>
+
+    <a href="#header" class="back-to-top" title="返回顶部">↑</a>
+
+</body>
+</html>
